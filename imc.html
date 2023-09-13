@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Marcos Kaiô">
+    <title>Calculadora IMC</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+    <h1>
+        CALCULE SEU IMC (Índice de Massa Corporal)
+    </h1>
+
+    <section id="caixa">
+        <form id="imcform" name="imcform">
+            <div id="fo1">
+                <label for="idade" style="padding-left: 0;">Qual a sua idade? 
+                    <input type="text" id="idade" placeholder="  Ex: 23" maxlength="2"> anos
+                </label> 
+                
+                <label for="sexo"> Qual o seu sexo? 
+                    <select name="sexo" id="sexo">
+                        <option value="" selected hidden disabled></option>
+                        <option value="masc">Masculino</option>
+                        <option value="fem">Feminino</option>
+                        <option value="no">Prefiro não definir</option>
+                    </select>
+                </label>
+            </div>
+
+            <label for="altura">Digite aqui sua altura: 
+                <input type="text" id="altura" placeholder="  Ex: 1.80" maxlength="5"> metros
+            </label>
+
+            <label for="peso" style="padding-top: 23px;">Digite aqui seu peso:
+                <input type="text" id="peso" placeholder="  Ex: 75" maxlength="3"> kg
+            </label>
+
+            <input type="submit" id="button" value="Calcular" onclick="calculoimc()">
+        </form>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
